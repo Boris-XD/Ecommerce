@@ -1,0 +1,12 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h1 span{
+    font-size: 2rem;
+    color: #037bc0
+}

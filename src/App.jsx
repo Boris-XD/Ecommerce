@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom';
 import './App.css'
-import category from './assets/categoria1.jpg';
 import Inicio from './pages/Inicio';
 import Nosotros from './pages/Nosotros';
 import Contacto from './pages/Contacto';
@@ -16,7 +15,7 @@ function App() {
   return (
     <div>
       <header>
-        <h1>Tienda de Muebles</h1>
+        <h1>Tienda de <span>Muebles</span></h1>
       </header>
 
       <Router>
@@ -39,17 +38,35 @@ function App() {
             <Route path="/contacto" element={<Contacto />} />
         </Routes>
       </Router>
-
-
-      <h2>Nuestros Productos</h2>
-      
-      <h2>Producto</h2>
-      <img src={category} alt="category one" />
-      <a href="https://www.google.com">Google</a>
-
-
-
-
+      <footer>
+        <div>
+          <h3>Categorías</h3>
+          <nav>
+            <a href="#">Cocina</a>
+            <a href="#">Oficina</a>
+            <a href="#">Jardín</a>
+            <a href="#">Cochera</a>
+            <a href="#">Dormitorios</a>
+          </nav>
+        </div>
+        <div>
+          <h3>Sobre Nosotros</h3>
+          <nav>
+            <a href="#">Nuestra historia</a>
+            <a href="#">Misión</a>
+            <a href="#">Carreras</a>
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Términos del servicio</a>
+          </nav>
+        </div>
+        <div>
+          <h3>Soporte</h3>
+            <a href="#">Preguntas frecuentes</a>
+            <a href="#">Ayuda en Línea</a>
+            <a href="#">Confianza y Seguridad</a>
+        </div>
+        <p>Todos los derechos reservados - 2023</p>
+        </footer>
     </div>
   )
 }
