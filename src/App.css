@@ -6,7 +6,28 @@ html {
     box-sizing: inherit;
 }
 
-h1 span{
+/** Globales **/
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+/** Header y Navegación **/
+.nombre-sitio {
+    margin-top: 3.1rem;
+    margin-bottom: 3.1rem;
+    text-align: center;
+}
+
+.nombre-sitio span{
     font-size: 2rem;
     color: #037bc0
+}
+
+.nav-principal {
+    border-top-style: solid;
+    border-color: #333232;
+    border-width: 1px;
 }

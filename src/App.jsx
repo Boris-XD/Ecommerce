@@ -15,11 +15,11 @@ function App() {
   return (
     <div>
       <header>
-        <h1>Tienda de <span>Muebles</span></h1>
+        <h1 className='nombre-sitio'>Tienda de <span>Muebles</span></h1>
       </header>
 
       <Router>
-        <nav>
+        <nav className='nav-principal'>
           <ul>
             <li><Link to="/">Inicio</Link></li>
             <li><Link to="/nosotros">Acerca De</Link></li>
