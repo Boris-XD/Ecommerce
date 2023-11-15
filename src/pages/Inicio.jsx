@@ -10,6 +10,7 @@ import producto6 from './../assets/producto6.jpg'
 const Inicio = () => {
   return (
     <>
+    <div className='hero'></div>
     <section>
       <h2>Categoria de Productos</h2>
       <img src={category} alt="category one" />

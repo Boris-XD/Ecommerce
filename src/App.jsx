@@ -19,16 +19,16 @@ function App() {
       </header>
 
       <Router>
-        <nav className='nav-principal'>
-          <ul>
-            <li><Link to="/">Inicio</Link></li>
-            <li><Link to="/nosotros">Acerca De</Link></li>
-            <li><Link to="/tienda">Tienda</Link></li>
-            <li><Link to="/blog">Blog</Link></li>
-            <li><Link to="/galeria">Galería</Link></li>
-            <li><Link to="/contacto">Contacto</Link></li>
-          </ul>
-        </nav>
+        <div className='nav-contenedor'>
+          <nav className='nav-principal contenedor'>
+              <Link to="/">Inicio</Link>
+              <Link to="/nosotros">Acerca De</Link>
+              <Link to="/tienda">Tienda</Link>
+              <Link to="/blog">Blog</Link>
+              <Link to="/galeria">Galería</Link>
+              <Link to="/contacto">Contacto</Link>
+          </nav>
+        </div>
         <Routes>
             <Route path="/" element={<Inicio />} />
             <Route path="/nosotros" element={<Nosotros />} />
